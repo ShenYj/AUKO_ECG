@@ -1,0 +1,6 @@
+framework module AUKO_ECG {
+  umbrella header "AUKO_ECG-umbrella.h"
+
+  export *
+  module * { export * }
+}

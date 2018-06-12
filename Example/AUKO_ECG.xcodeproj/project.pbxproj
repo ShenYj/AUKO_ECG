@@ -37,8 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		011237485461EE404A93499F /* AUKO_ECG.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = AUKO_ECG.podspec; path = ../AUKO_ECG.podspec; sourceTree = "<group>"; };
-		2D1295F34D9428E7596FB0E7 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		011237485461EE404A93499F /* AUKO_ECG.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = AUKO_ECG.podspec; path = ../AUKO_ECG.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		2D1295F34D9428E7596FB0E7 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* AUKO_ECG_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AUKO_ECG_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -64,7 +64,7 @@
 		968DB03B99A63B0FE3FCAE84 /* Pods_AUKO_ECG_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AUKO_ECG_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F52B2A09E9C7283345A8F80 /* Pods-AUKO_ECG_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AUKO_ECG_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AUKO_ECG_Example/Pods-AUKO_ECG_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		A4D522F434ECA57289C4871D /* Pods-AUKO_ECG_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AUKO_ECG_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-AUKO_ECG_Example/Pods-AUKO_ECG_Example.release.xcconfig"; sourceTree = "<group>"; };
-		B1C45963C421C3682BE4D06F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		B1C45963C421C3682BE4D06F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		EE0A24E7DDC48FF751863C63 /* Pods_AUKO_ECG_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AUKO_ECG_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD7532A3C8187D067490BC01 /* Pods-AUKO_ECG_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AUKO_ECG_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AUKO_ECG_Tests/Pods-AUKO_ECG_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -247,6 +247,9 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = ShenYj;
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = 4AT6MHXZPN;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -485,9 +488,11 @@
 			baseConfigurationReference = 9F52B2A09E9C7283345A8F80 /* Pods-AUKO_ECG_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 4AT6MHXZPN;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AUKO_ECG/AUKO_ECG-Prefix.pch";
 				INFOPLIST_FILE = "AUKO_ECG/AUKO_ECG-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -500,9 +505,11 @@
 			baseConfigurationReference = A4D522F434ECA57289C4871D /* Pods-AUKO_ECG_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 4AT6MHXZPN;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AUKO_ECG/AUKO_ECG-Prefix.pch";
 				INFOPLIST_FILE = "AUKO_ECG/AUKO_ECG-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";

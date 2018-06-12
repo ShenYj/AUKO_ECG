@@ -1,0 +1,22 @@
+{
+  "name": "AUKO_ECG",
+  "version": "0.1.0",
+  "summary": "A short description of AUKO_ECG.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/ShenYj/AUKO_ECG",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "ShenYj": "shen-yanjie@seagbri.com"
+  },
+  "source": {
+    "git": "https://github.com/ShenYj/AUKO_ECG.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "AUKO_ECG/Classes/**/*"
+}

@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'AUKO_ECG'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of AUKO_ECG.'
+  s.version          = '0.0.1'
+  s.summary          = 'SDK for ECG.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,19 +18,19 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+                集成心关护蓝牙通信解析、数据缓存和数据上传等核心功能
                        DESC
 
-  s.homepage         = 'https://github.com/ShenYj/AUKO_ECG'
+  s.homepage         = 'https://github.com/AUKO-BJ/AUKO_ECG'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'ShenYj' => 'shen-yanjie@seagbri.com' }
-  s.source           = { :git => 'https://github.com/ShenYj/AUKO_ECG.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/AUKO-BJ/AUKO_ECG.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
-
-  s.source_files = 'AUKO_ECG/Classes/**/*'
+  s.vendored_frameworks = 'AUKO_ECG/Framework/ECG_SDK.framework'
+  # s.source_files = 'AUKO_ECG/Classes/**/*'
   
   # s.resource_bundles = {
   #   'AUKO_ECG' => ['AUKO_ECG/Assets/*.png']
