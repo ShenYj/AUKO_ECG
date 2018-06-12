@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'AUKO_ECG_Example' do
+  pod 'AUKO_ECG', :path => '../'
+
+  target 'AUKO_ECG_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
