@@ -1,5 +1,5 @@
 framework module ECG_SDK {
-  umbrella header "ECG_SDK-umbrella.h"
+  umbrella header "ECG_SDK.h"
 
   export *
   module * { export * }
