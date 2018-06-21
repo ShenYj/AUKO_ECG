@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'AUKO_ECG'
-  s.version          = '0.0.3'
+  s.version          = '0.0.4'
   s.summary          = 'SDK for ECG.'
 
 # This description is used to generate tags and improve search results.
