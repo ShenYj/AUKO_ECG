@@ -24,7 +24,7 @@
 it, simply add the following line to your Podfile:
 
    ```ruby
-   pod 'AUKO_ECG'
+   pod 'AUKO_ECG', '~> 0.0.6'
    ```
  
 ####2. 导入依赖库: 
