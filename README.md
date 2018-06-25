@@ -13,7 +13,7 @@
 ## SDK集成 & 条件
 
 
-####1. 集成ECG_SDK<br>
+#### 1. 集成ECG_SDK<br>
 
  - 1.1  手动集成<br>
        *  SDK下载 [仓库地址](https://github.com/AUKO-BJ/AUKO_ECG) <br>
@@ -27,13 +27,13 @@ it, simply add the following line to your Podfile:
    pod 'AUKO_ECG', '~> 0.0.6'
    ```
  
-####2. 导入依赖库: 
+#### 2. 导入依赖库: 
 
    `CoreBluetooth.framework` <br>
    `libsqlite3.dylib`<br>
    `SystemConfiguration.framework`<br>
     
-####3. 设置	`Other Linker Flag:  -ObjC`
+#### 3. 设置	`Other Linker Flag:  -ObjC`
 
 
 ## 软件架构
