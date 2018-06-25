@@ -127,7 +127,7 @@ it, simply add the following line to your Podfile:
 - (void)js_peripheralDisconnected:(CBPeripheral *)peripheral;
 ```
 
-更多接口请参照文档:[接口文档](https://github.com/AUKO-BJ/AUKO_ECG/blob/master/html/index.html)
+更多接口介绍请Clone本地后查看本地文档:[接口文档](https://github.com/AUKO-BJ/AUKO_ECG/blob/master/html/index.html)
 
 ## 补充说明
 
