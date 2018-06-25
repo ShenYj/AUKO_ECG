@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>JSECGOAuth Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">docTarget </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">Auko</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+
+	
+	<optgroup label="Class Methods">
+		
+		<option value="//api/name/js_registerECG_SDK:age:gender:delegate:debugMode:callBack:">+ js_registerECG_SDK:age:gender:delegate:debugMode:callBack:</option>
+		
+		<option value="//api/name/js_registerECG_SDK:birthday:gender:delegate:debugMode:callBack:">+ js_registerECG_SDK:birthday:gender:delegate:debugMode:callBack:</option>
+		
+		<option value="//api/name/js_registerECG_SDK:nickName:identifier:birthday:age:tel:gender:delegate:debugMode:callBack:">+ js_registerECG_SDK:nickName:identifier:birthday:age:tel:gender:delegate:debugMode:callBack:</option>
+		
+	</optgroup>
+	
+
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">JSECGOAuth Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>JSECGOAuth.h<br />JSECGOAuth.m</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/js_registerECG_SDK:birthday:gender:delegate:debugMode:callBack:" title="js_registerECG_SDK:birthday:gender:delegate:debugMode:callBack:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/js_registerECG_SDK:birthday:gender:delegate:debugMode:callBack:">+&nbsp;js_registerECG_SDK:birthday:gender:delegate:debugMode:callBack:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>@method js_registerECG_SDK: birthday: gender: callBlack:</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)js_registerECG_SDK:(NSString *)<em>tel</em> birthday:(NSString *)<em>birthday</em> gender:(AUKOGender)<em>gender</em> delegate:(id&lt;JSBLEHandlerProtocol&gt;)<em>delegate</em> debugMode:(BOOL)<em>debugMode</em> callBack:(ECG_SDK_OAuthCallback)<em>callBack</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>tel</code></th>
+						<td><p>手机号码</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>birthday</code></th>
+						<td><p>生日, 格式: 2018-06-19</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>gender</code></th>
+						<td><p>性别</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>delegate</code></th>
+						<td><p>代理对象, 实现<i>JSBLEHandlerProtocol</i>协议的对象, 需要通过实现协议方法来获取周边搜索到的设备</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>debugMode</code></th>
+						<td><p>YES -> Debug模式, NO -> Release模式</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>callBack</code></th>
+						<td><p>回调</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>@method js_registerECG_SDK: birthday: gender: callBlack:</p><p>SDK注册接口</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">JSECGOAuth.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/js_registerECG_SDK:age:gender:delegate:debugMode:callBack:" title="js_registerECG_SDK:age:gender:delegate:debugMode:callBack:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/js_registerECG_SDK:age:gender:delegate:debugMode:callBack:">+&nbsp;js_registerECG_SDK:age:gender:delegate:debugMode:callBack:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>@method js_registerECG_SDK: age: gender: callBlack:</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)js_registerECG_SDK:(NSString *)<em>tel</em> age:(NSString *)<em>age</em> gender:(AUKOGender)<em>gender</em> delegate:(id&lt;JSBLEHandlerProtocol&gt;)<em>delegate</em> debugMode:(BOOL)<em>debugMode</em> callBack:(ECG_SDK_OAuthCallback)<em>callBack</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>tel</code></th>
+						<td><p>手机号码</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>age</code></th>
+						<td><p>年龄, 格式: 20</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>gender</code></th>
+						<td><p>性别</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>delegate</code></th>
+						<td><p>代理对象, 实现<i>JSBLEHandlerProtocol</i>协议的对象, 需要通过实现协议方法来获取周边搜索到的设备</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>debugMode</code></th>
+						<td><p>YES -> Debug模式, NO -> Release模式</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>callBack</code></th>
+						<td><p>回调</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>@method js_registerECG_SDK: age: gender: callBlack:</p><p>SDK注册接口</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">JSECGOAuth.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/js_registerECG_SDK:nickName:identifier:birthday:age:tel:gender:delegate:debugMode:callBack:" title="js_registerECG_SDK:nickName:identifier:birthday:age:tel:gender:delegate:debugMode:callBack:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/js_registerECG_SDK:nickName:identifier:birthday:age:tel:gender:delegate:debugMode:callBack:">+&nbsp;js_registerECG_SDK:nickName:identifier:birthday:age:tel:gender:delegate:debugMode:callBack:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>@method js_registerECG_SDK: tel: birthday: age: gender: debugMode: callBlack:</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)js_registerECG_SDK:(NSString *__nullable)<em>userName</em> nickName:(NSString *__nullable)<em>nickName</em> identifier:(NSString *__nullable)<em>identifier</em> birthday:(NSString *__nullable)<em>birthday</em> age:(NSString *__nullable)<em>age</em> tel:(NSString *)<em>tel</em> gender:(AUKOGender)<em>gender</em> delegate:(id&lt;JSBLEHandlerProtocol&gt;)<em>delegate</em> debugMode:(BOOL)<em>debugMode</em> callBack:(ECG_SDK_OAuthCallback)<em>callBack</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>userName</code></th>
+						<td><p>用户姓名</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>nickName</code></th>
+						<td><p>用户昵称</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>identifier</code></th>
+						<td><p>用户唯一标识, 如果为空, 则依据手机号标识用户</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>birthday</code></th>
+						<td><p>生日, 格式: 2018-06-19</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>age</code></th>
+						<td><p>年龄, 格式: 20</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>tel</code></th>
+						<td><p>手机号码</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>gender</code></th>
+						<td><p>性别</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>delegate</code></th>
+						<td><p>代理对象, 实现<i>JSBLEHandlerProtocol</i>协议的对象;不允许为nil, 需要通过实现协议方法来获取周边搜索到的设备</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>debugMode</code></th>
+						<td><p>是否是debug模式, YES->debug</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>callBack</code></th>
+						<td><p>回调</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>@method js_registerECG_SDK: tel: birthday: age: gender: debugMode: callBlack:</p><p>SDK注册接口</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">JSECGOAuth.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2018 Auko. All rights reserved. Updated: 2018-06-25</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>
