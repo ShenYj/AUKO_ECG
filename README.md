@@ -35,6 +35,8 @@ it, simply add the following line to your Podfile:
     
 #### 3. 设置	`Other Linker Flag:  -ObjC`
 
+#### 4. 导入头文件 ```#import <ECG_SDK/ECG_SDK.h>```
+
 
 ## 软件架构
 
@@ -127,7 +129,7 @@ it, simply add the following line to your Podfile:
 - (void)js_peripheralDisconnected:(CBPeripheral *)peripheral;
 ```
 
-更多接口介绍请Clone本地后查看本地文档:[接口文档](https://github.com/AUKO-BJ/AUKO_ECG/blob/master/html/index.html)
+更多接口介绍请Clone本地后查看本地文档: Git\_SDK\_Project/AUKO_ECG/html/index.html
 
 ## 补充说明
 
