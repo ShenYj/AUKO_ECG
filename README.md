@@ -8,7 +8,7 @@
 
 ## 示例Demo
 
-[example project](https://github.com/AUKO-BJ/AUKO_ECG_Demo_iOS) __clone或下载此工程__
+[example project](https://github.com/AUKO-BJ/AUKO_ECG_Demo_iOS) __clone此工程__
 
 ## SDK集成 & 条件
 
