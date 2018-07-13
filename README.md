@@ -141,14 +141,14 @@ it, simply add the following line to your Podfile:
 
 ## 版本记录
 
-##### 0.0.6 version 2018.06.25
+##### - 0.0.6 version 2018.06.25
 
 - [x] BLE封装<br>
 - [x] 注册<br>
 - [x] 数据库缓存<br>
 - [x] 压缩上传<br>
       
-##### 0.0.7 version 2018.07.13
+##### - 0.0.7 version 2018.07.13
 
 - [x] 新增报告相关接口<br>
       
