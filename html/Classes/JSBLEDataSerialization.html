@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>JSBLEDataSerialization Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">docTarget </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">Auko</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+	<optgroup label="Properties">
+		
+		<option value="//api/name/calendar">calendar</option>
+		
+		<option value="//api/name/ecgDataPacketUploader">ecgDataPacketUploader</option>
+		
+	</optgroup>
+	
+
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/checkData">- checkData</option>
+		
+		<option value="//api/name/ecg_ECGDataPacket:dataType:">- ecg_ECGDataPacket:dataType:</option>
+		
+		<option value="//api/name/ecg_ECGListOfHistoricalData:dataType:">- ecg_ECGListOfHistoricalData:dataType:</option>
+		
+		<option value="//api/name/ecg_ECGManualAnalyze:dataType:">- ecg_ECGManualAnalyze:dataType:</option>
+		
+		<option value="//api/name/ecg_ECGPowerLevelAndVersion:dataType:">- ecg_ECGPowerLevelAndVersion:dataType:</option>
+		
+		<option value="//api/name/getEightSecondPacketData">- getEightSecondPacketData</option>
+		
+		<option value="//api/name/initWithDeviceMAC:">- initWithDeviceMAC:</option>
+		
+		<option value="//api/name/receiveBLEData:">- receiveBLEData:</option>
+		
+		<option value="//api/name/timeStamp">- timeStamp</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">JSBLEDataSerialization Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>JSBLEDataSerialization.h<br />JSBLEDataSerialization.m</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>@Discussion   BLE 蓝牙数据解析: 时间戳、电池电量、ECG版本号等</p>
+
+<p>@Discussion   BLE 蓝牙数据解析: 数据包解析</p>
+
+<ul>
+<li>&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash; **</li>
+</ul>
+
+
+<p>@Discussion   BLE 蓝牙数据解析: 手动按键捕捉解析</p>
+
+<p>@Discussion   BLE 蓝牙数据解析: 历史缓存数据列表解析</p>
+					</div>
+					
+					
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						<h2 class="task-title">Other Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/initWithDeviceMAC:" title="initWithDeviceMAC:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/initWithDeviceMAC:">&ndash;&nbsp;initWithDeviceMAC:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>@metohd initWithDeviceMAC:</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (instancetype)initWithDeviceMAC:(NSString *)<em>MACAddress</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>MACAddress</code></th>
+						<td><p>ECG 设备的MAC 地址</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>@metohd initWithDeviceMAC:</p><p>数据序列器构造函数</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">JSBLEDataSerialization.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/receiveBLEData:" title="receiveBLEData:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/receiveBLEData:">&ndash;&nbsp;receiveBLEData:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>@method receiveBLEData:</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (ECGSerializationType)receiveBLEData:(NSData *)<em>data</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>data</code></th>
+						<td><p>接收到的蓝牙数据</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>解析后数据的类型</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>@method receiveBLEData:</p><p>接收并解析处理蓝牙数据</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">JSBLEDataSerialization.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getEightSecondPacketData" title="getEightSecondPacketData"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getEightSecondPacketData">&ndash;&nbsp;getEightSecondPacketData</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>@method getEightSecondPacketData</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (EcgDataPacket *)getEightSecondPacketData</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>@method getEightSecondPacketData</p><p>获取ECG 8s packet</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">JSBLEDataSerialization.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/calendar" title="calendar"></a>
+	<h3 class="method-title"><code><a href="#//api/name/calendar">&nbsp;&nbsp;calendar</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>@property calendar</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong, readonly) NSCalendar *calendar</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>@property calendar</p><p>日历</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">JSBLEDataSerialization.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/ecgDataPacketUploader" title="ecgDataPacketUploader"></a>
+	<h3 class="method-title"><code><a href="#//api/name/ecgDataPacketUploader">&nbsp;&nbsp;ecgDataPacketUploader</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>@property ecgDataPacketUploader</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong, readonly) JSECGUploader *ecgDataPacketUploader</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>@property ecgDataPacketUploader</p><p>用于实时/历史包上传</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">JSBLEDataSerialization.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						
+						<h2 class="task-title">Other Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/checkData" title="checkData"></a>
+	<h3 class="method-title"><code><a href="#//api/name/checkData">&ndash;&nbsp;checkData</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>/            NSLog(@&ldquo;msppReceiveBufSize    %x&rdquo;,msppReceiveBufs[i]);</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (int)checkData</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>/            NSLog(@&ldquo;msppReceiveBufSize    %x&rdquo;,msppReceiveBufs[i]);</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">JSBLEDataSerialization.m</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="IdentityCheck Methods" name="task_IdentityCheck Methods"></a>
+						<h2 class="task-title">IdentityCheck Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/ecg_ECGPowerLevelAndVersion:dataType:" title="ecg_ECGPowerLevelAndVersion:dataType:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/ecg_ECGPowerLevelAndVersion:dataType:">&ndash;&nbsp;ecg_ECGPowerLevelAndVersion:dataType:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>@method ecg_ECGPowerLevelAndVersion: dataType:</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)ecg_ECGPowerLevelAndVersion:(NSData *)<em>receivedData</em> dataType:(int)<em>dataType</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>receivedData</code></th>
+						<td><p>收到的数据</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>dataType</code></th>
+						<td><p>数据类型</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>@method ecg_ECGPowerLevelAndVersion: dataType:</p><p>时间戳解析、电池电量、ECG版本号等</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">JSBLEDataSerialization+IdentityCheck.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/timeStamp" title="timeStamp"></a>
+	<h3 class="method-title"><code><a href="#//api/name/timeStamp">&ndash;&nbsp;timeStamp</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<ul>
+<li>CheckSum 取消 **</li>
+</ul>
+
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)timeStamp</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<ul>
+<li>CheckSum 取消 **</li>
+</ul>
+
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">JSBLEDataSerialization+IdentityCheck.m</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="ECGDataPacket Methods" name="task_ECGDataPacket Methods"></a>
+						<h2 class="task-title">ECGDataPacket Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/ecg_ECGDataPacket:dataType:" title="ecg_ECGDataPacket:dataType:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/ecg_ECGDataPacket:dataType:">&ndash;&nbsp;ecg_ECGDataPacket:dataType:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>@method ecg_ECGDataPacket: dataType:</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)ecg_ECGDataPacket:(NSData *)<em>receivedData</em> dataType:(int)<em>dataType</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>receivedData</code></th>
+						<td><p>收到的数据</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>dataType</code></th>
+						<td><p>数据类型</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>@method ecg_ECGDataPacket: dataType:</p><p>数据包解析</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">JSBLEDataSerialization+ECGDataPacket.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="ManualAnalyze Methods" name="task_ManualAnalyze Methods"></a>
+						<h2 class="task-title">ManualAnalyze Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/ecg_ECGManualAnalyze:dataType:" title="ecg_ECGManualAnalyze:dataType:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/ecg_ECGManualAnalyze:dataType:">&ndash;&nbsp;ecg_ECGManualAnalyze:dataType:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>@method ecg_ECGManualAnalyze: dataType:</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)ecg_ECGManualAnalyze:(NSData *)<em>receivedData</em> dataType:(int)<em>dataType</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>receivedData</code></th>
+						<td><p>收到的数据</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>dataType</code></th>
+						<td><p>数据类型</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>@method ecg_ECGManualAnalyze: dataType:</p><p>手动按键捕捉解析</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">JSBLEDataSerialization+ManualAnalyze.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="HistoricalData Methods" name="task_HistoricalData Methods"></a>
+						<h2 class="task-title">HistoricalData Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/ecg_ECGListOfHistoricalData:dataType:" title="ecg_ECGListOfHistoricalData:dataType:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/ecg_ECGListOfHistoricalData:dataType:">&ndash;&nbsp;ecg_ECGListOfHistoricalData:dataType:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>@method ecg_ECGListOfHistoricalData: dataType:</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)ecg_ECGListOfHistoricalData:(NSData *)<em>receivedData</em> dataType:(int)<em>dataType</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>receivedData</code></th>
+						<td><p>收到的数据</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>dataType</code></th>
+						<td><p>数据类型</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>@method ecg_ECGListOfHistoricalData: dataType:</p><p>历史数据列表信息</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">JSBLEDataSerialization+HistoricalData.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2018 Auko. All rights reserved. Updated: 2018-07-13</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>
