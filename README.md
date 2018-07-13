@@ -24,7 +24,7 @@
 it, simply add the following line to your Podfile:
 
    ```ruby
-   pod 'AUKO_ECG', '~> 0.0.6'
+   pod 'AUKO_ECG', '~> 0.0.7'
    ```
  
 #### 2. 导入依赖库: 
@@ -138,6 +138,20 @@ it, simply add the following line to your Podfile:
 3. 手动调用`js_disconnect`断开连接, 本次生命周期内 , App 不会自动重连
 4. 启动 App 时, 会根据上一次连接设备的选项`connectMethod`, 决定是否自动建立重连, 如果不希望启动App时自动建立连接, 在连接ECG时可以设置为`ECGConnectMethodManual`或在已经连接后调用`js_deBindingECGDevice`解除绑定
 5. 缓存压缩默认启动App 60s后开始, 根据当前数据库换存量调整触发时间, 每次压缩上传100条, 间隔30s, 不足30s将间隔200s触发一次
+
+## 版本记录
+
+##### 0.0.6 version 2018.06.25
+
+- [x] BLE封装<br>
+- [x] 注册<br>
+- [x] 数据库缓存<br>
+- [x] 压缩上传<br>
+      
+##### 0.0.7 version 2018.07.13
+
+- [x] 新增报告相关接口<br>
+      
 
 ## Author
 
