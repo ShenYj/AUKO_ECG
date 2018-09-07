@@ -1,0 +1,2009 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>JSDataProcessingUnit Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">docTarget </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">Auko</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+	<optgroup label="Properties">
+		
+		<option value="//api/name/currentNeedToSendOTASubDataSequence">currentNeedToSendOTASubDataSequence</option>
+		
+		<option value="//api/name/ecgConectionHeartBeatData">ecgConectionHeartBeatData</option>
+		
+		<option value="//api/name/hasValidateUpdateOrder">hasValidateUpdateOrder</option>
+		
+		<option value="//api/name/isOTAing">isOTAing</option>
+		
+		<option value="//api/name/isTransportECGData">isTransportECGData</option>
+		
+		<option value="//api/name/isWritingData">isWritingData</option>
+		
+		<option value="//api/name/needToWriteData">needToWriteData</option>
+		
+		<option value="//api/name/needToWriteOTAData">needToWriteOTAData</option>
+		
+		<option value="//api/name/needToWriteOTAPacketIndex">needToWriteOTAPacketIndex</option>
+		
+		<option value="//api/name/needToWriteOTATotalDataArray">needToWriteOTATotalDataArray</option>
+		
+		<option value="//api/name/needToWriteOTATotalDataLength">needToWriteOTATotalDataLength</option>
+		
+		<option value="//api/name/otaDataOffset">otaDataOffset</option>
+		
+		<option value="//api/name/otaSubDataSequence">otaSubDataSequence</option>
+		
+		<option value="//api/name/otaTotalDataLength">otaTotalDataLength</option>
+		
+		<option value="//api/name/subDataOffset">subDataOffset</option>
+		
+	</optgroup>
+	
+
+	
+	<optgroup label="Class Methods">
+		
+		<option value="//api/name/shared">+ shared</option>
+		
+	</optgroup>
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/confirmToUpdateECG">- confirmToUpdateECG</option>
+		
+		<option value="//api/name/downloadUpdatefile:">- downloadUpdatefile:</option>
+		
+		<option value="//api/name/findoutECGNewVerionWithMessage:">- findoutECGNewVerionWithMessage:</option>
+		
+		<option value="//api/name/get142ByteFromOTADataConvertTo150ByteSubData">- get142ByteFromOTADataConvertTo150ByteSubData</option>
+		
+		<option value="//api/name/getCMDDataWithOrder:">- getCMDDataWithOrder:</option>
+		
+		<option value="//api/name/receivedECGOTASubDataAnswerBack:">- receivedECGOTASubDataAnswerBack:</option>
+		
+		<option value="//api/name/receivedECGUpdateCMDAnswerBack:">- receivedECGUpdateCMDAnswerBack:</option>
+		
+		<option value="//api/name/sendBLEConnectionProtocolCMD">- sendBLEConnectionProtocolCMD</option>
+		
+		<option value="//api/name/sendCancelCMDToECG">- sendCancelCMDToECG</option>
+		
+		<option value="//api/name/sendCompletionCMDToECG">- sendCompletionCMDToECG</option>
+		
+		<option value="//api/name/sendData:">- sendData:</option>
+		
+		<option value="//api/name/sendOTAPacketDataToECG:">- sendOTAPacketDataToECG:</option>
+		
+		<option value="//api/name/sendSubLimitDataWriteToCharacteristic:">- sendSubLimitDataWriteToCharacteristic:</option>
+		
+		<option value="//api/name/sendUpdateCMDToECG">- sendUpdateCMDToECG</option>
+		
+		<option value="//api/name/subData">- subData</option>
+		
+		<option value="//api/name/updateCanceledByCustom">- updateCanceledByCustom</option>
+		
+		<option value="//api/name/updateFaild">- updateFaild</option>
+		
+		<option value="//api/name/updateSuccessWithMessage:">- updateSuccessWithMessage:</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">JSDataProcessingUnit Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>JSDataProcessingUnit.h<br />JSDataProcessingUnit.m</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>@author       ShenYj
+@copyright    Copyright ©  2018年 ShenYj. All rights reserved.</p>
+
+<p>@Discussion    用于传输蓝牙数据的工具类, 如发送时间戳, 数据包应答确认和OTA</p>
+					</div>
+					
+					
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						<h2 class="task-title">Other Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/shared" title="shared"></a>
+	<h3 class="method-title"><code><a href="#//api/name/shared">+&nbsp;shared</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>@method shared</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (instancetype)shared</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>@method shared</p><p>获取单例</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">JSDataProcessingUnit.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/isTransportECGData" title="isTransportECGData"></a>
+	<h3 class="method-title"><code><a href="#//api/name/isTransportECGData">&nbsp;&nbsp;isTransportECGData</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<ul>
+<li>状态标记: 已经开始传输ECG数据包 (配对校验成功,开始通信数据) **</li>
+</ul>
+
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) BOOL isTransportECGData</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<ul>
+<li>状态标记: 已经开始传输ECG数据包 (配对校验成功,开始通信数据) **</li>
+</ul>
+
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">JSDataProcessingUnit.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/isWritingData" title="isWritingData"></a>
+	<h3 class="method-title"><code><a href="#//api/name/isWritingData">&nbsp;&nbsp;isWritingData</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<ul>
+<li>状态标记: 记录当前是否正在写入数据中 **</li>
+</ul>
+
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) BOOL isWritingData</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<ul>
+<li>状态标记: 记录当前是否正在写入数据中 **</li>
+</ul>
+
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">JSDataProcessingUnit.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/subDataOffset" title="subDataOffset"></a>
+	<h3 class="method-title"><code><a href="#//api/name/subDataOffset">&nbsp;&nbsp;subDataOffset</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<ul>
+<li>状态标记: 记录已经写入的数据长度 (发送数据时使用,记录偏移量) **</li>
+</ul>
+
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) NSInteger subDataOffset</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<ul>
+<li>状态标记: 记录已经写入的数据长度 (发送数据时使用,记录偏移量) **</li>
+</ul>
+
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">JSDataProcessingUnit.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/hasValidateUpdateOrder" title="hasValidateUpdateOrder"></a>
+	<h3 class="method-title"><code><a href="#//api/name/hasValidateUpdateOrder">&nbsp;&nbsp;hasValidateUpdateOrder</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<ul>
+<li>状态标记: 是否进行过升级指令校验 (避免时间戳多次校验不通过, ECG误认为是OTA数据通信的反信导致崩溃) **</li>
+</ul>
+
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) BOOL hasValidateUpdateOrder</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<ul>
+<li>状态标记: 是否进行过升级指令校验 (避免时间戳多次校验不通过, ECG误认为是OTA数据通信的反信导致崩溃) **</li>
+</ul>
+
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">JSDataProcessingUnit.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/isOTAing" title="isOTAing"></a>
+	<h3 class="method-title"><code><a href="#//api/name/isOTAing">&nbsp;&nbsp;isOTAing</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<ul>
+<li>状态标记: 是否正在OTA升级 **</li>
+</ul>
+
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) BOOL isOTAing</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<ul>
+<li>状态标记: 是否正在OTA升级 **</li>
+</ul>
+
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">JSDataProcessingUnit.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/needToWriteData" title="needToWriteData"></a>
+	<h3 class="method-title"><code><a href="#//api/name/needToWriteData">&nbsp;&nbsp;needToWriteData</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<ul>
+<li>需要写入的数据 (真正发送数据时的数据)  **</li>
+</ul>
+
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSData *needToWriteData</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<ul>
+<li>需要写入的数据 (真正发送数据时的数据)  **</li>
+</ul>
+
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">JSDataProcessingUnit.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/sendBLEConnectionProtocolCMD" title="sendBLEConnectionProtocolCMD"></a>
+	<h3 class="method-title"><code><a href="#//api/name/sendBLEConnectionProtocolCMD">&ndash;&nbsp;sendBLEConnectionProtocolCMD</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>@method sendBLEConnectionProtocolCMD</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)sendBLEConnectionProtocolCMD</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>@method sendBLEConnectionProtocolCMD</p><p>新增的通信协议连接状态校验</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">JSDataProcessingUnit.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/sendData:" title="sendData:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/sendData:">&ndash;&nbsp;sendData:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>@method sendData:</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)sendData:(NSData *)<em>data</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>data</code></th>
+						<td><p>需要发送的数据</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>@method sendData:</p><p>发送数据给ECG ,因为受长度限制,如果需要发送的文件超出20 byte,那么每20 byte发送一次 ,内部会调用到 @see <a href="#//api/name/sendSubLimitDataWriteToCharacteristic:">sendSubLimitDataWriteToCharacteristic:</a></p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">JSDataProcessingUnit.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/sendSubLimitDataWriteToCharacteristic:" title="sendSubLimitDataWriteToCharacteristic:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/sendSubLimitDataWriteToCharacteristic:">&ndash;&nbsp;sendSubLimitDataWriteToCharacteristic:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>@method sendSubLimitDataWriteToCharacteristic:</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)sendSubLimitDataWriteToCharacteristic:(CBCharacteristic *)<em>characteristic</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>characteristic</code></th>
+						<td><p>发送数据的特征对象</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>@method sendSubLimitDataWriteToCharacteristic:</p><p>将每次截取的数据发送给特征 (用于时间戳  、 操作指令)</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">JSDataProcessingUnit.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/receivedECGUpdateCMDAnswerBack:" title="receivedECGUpdateCMDAnswerBack:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/receivedECGUpdateCMDAnswerBack:">&ndash;&nbsp;receivedECGUpdateCMDAnswerBack:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>@method receivedECGUpdateCMDAnswerBack:</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)receivedECGUpdateCMDAnswerBack:(NSData *)<em>receivedData</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>receivedData</code></th>
+						<td><p>收到 ECG升级指令应答的数据</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>@method receivedECGUpdateCMDAnswerBack:</p><p>收到 ECG 给手机的升级指令应答 时调用</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">JSDataProcessingUnit.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/receivedECGOTASubDataAnswerBack:" title="receivedECGOTASubDataAnswerBack:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/receivedECGOTASubDataAnswerBack:">&ndash;&nbsp;receivedECGOTASubDataAnswerBack:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>@method receivedECGOTASubDataAnswerBack:</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)receivedECGOTASubDataAnswerBack:(NSData *)<em>receivedData</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>receivedData</code></th>
+						<td><p>收到 ECG数据应答指令的数据</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>@method receivedECGOTASubDataAnswerBack:</p><p>收到 ECG 给手机的OTA数据应答请求 时调用</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">JSDataProcessingUnit.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/updateFaild" title="updateFaild"></a>
+	<h3 class="method-title"><code><a href="#//api/name/updateFaild">&ndash;&nbsp;updateFaild</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>@method updateFaild</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)updateFaild</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>@method updateFaild</p><p>升级失败 ( 升级中途 突然断了连接, 蓝牙中断开连接协议方法中调用该接口 , 替代原来的升级失败方法)</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">JSDataProcessingUnit.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						
+						<h2 class="task-title">Other Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/sendUpdateCMDToECG" title="sendUpdateCMDToECG"></a>
+	<h3 class="method-title"><code><a href="#//api/name/sendUpdateCMDToECG">&ndash;&nbsp;sendUpdateCMDToECG</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<ul>
+<li>升级指令 **</li>
+</ul>
+
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)sendUpdateCMDToECG</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<ul>
+<li>升级指令 **</li>
+</ul>
+
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">JSDataProcessingUnit.m</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/sendCompletionCMDToECG" title="sendCompletionCMDToECG"></a>
+	<h3 class="method-title"><code><a href="#//api/name/sendCompletionCMDToECG">&ndash;&nbsp;sendCompletionCMDToECG</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<ul>
+<li>完成指令 **</li>
+</ul>
+
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)sendCompletionCMDToECG</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<ul>
+<li>完成指令 **</li>
+</ul>
+
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">JSDataProcessingUnit.m</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/sendCancelCMDToECG" title="sendCancelCMDToECG"></a>
+	<h3 class="method-title"><code><a href="#//api/name/sendCancelCMDToECG">&ndash;&nbsp;sendCancelCMDToECG</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<ul>
+<li>取消指令 **</li>
+</ul>
+
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)sendCancelCMDToECG</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<ul>
+<li>取消指令 **</li>
+</ul>
+
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">JSDataProcessingUnit.m</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getCMDDataWithOrder:" title="getCMDDataWithOrder:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getCMDDataWithOrder:">&ndash;&nbsp;getCMDDataWithOrder:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<ul>
+<li>获取指令的公共方法:  0: 升级指令, 1:升级完成指令(OTA数据文件上传完成), 2:取消升级指令 **</li>
+</ul>
+
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSData *)getCMDDataWithOrder:(int)<em>order</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<ul>
+<li>获取指令的公共方法:  0: 升级指令, 1:升级完成指令(OTA数据文件上传完成), 2:取消升级指令 **</li>
+</ul>
+
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">JSDataProcessingUnit.m</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/downloadUpdatefile:" title="downloadUpdatefile:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/downloadUpdatefile:">&ndash;&nbsp;downloadUpdatefile:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<ul>
+<li>下载ECG升级文件 **</li>
+</ul>
+
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)downloadUpdatefile:(NSString *)<em>urlString</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<ul>
+<li>下载ECG升级文件 **</li>
+</ul>
+
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">JSDataProcessingUnit.m</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/findoutECGNewVerionWithMessage:" title="findoutECGNewVerionWithMessage:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/findoutECGNewVerionWithMessage:">&ndash;&nbsp;findoutECGNewVerionWithMessage:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<ul>
+<li>首次OTA升级提醒弹框 **</li>
+</ul>
+
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)findoutECGNewVerionWithMessage:(NSString *)<em>message</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<ul>
+<li>首次OTA升级提醒弹框 **</li>
+</ul>
+
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">JSDataProcessingUnit.m</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/confirmToUpdateECG" title="confirmToUpdateECG"></a>
+	<h3 class="method-title"><code><a href="#//api/name/confirmToUpdateECG">&ndash;&nbsp;confirmToUpdateECG</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<ul>
+<li>点击现在更新后的二次提醒,提醒数据丢失 **</li>
+</ul>
+
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)confirmToUpdateECG</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<ul>
+<li>点击现在更新后的二次提醒,提醒数据丢失 **</li>
+</ul>
+
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">JSDataProcessingUnit.m</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/sendOTAPacketDataToECG:" title="sendOTAPacketDataToECG:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/sendOTAPacketDataToECG:">&ndash;&nbsp;sendOTAPacketDataToECG:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<ul>
+<li>发送 OTA 数据包 (150 Byte数据包) 给ECG  **</li>
+</ul>
+
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)sendOTAPacketDataToECG:(NSInteger)<em>idx</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<ul>
+<li>发送 OTA 数据包 (150 Byte数据包) 给ECG  **</li>
+</ul>
+
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">JSDataProcessingUnit.m</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/updateSuccessWithMessage:" title="updateSuccessWithMessage:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/updateSuccessWithMessage:">&ndash;&nbsp;updateSuccessWithMessage:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<ul>
+<li>升级成功,progressAlertController展示处理 **</li>
+</ul>
+
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)updateSuccessWithMessage:(NSString *)<em>message</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<ul>
+<li>升级成功,progressAlertController展示处理 **</li>
+</ul>
+
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">JSDataProcessingUnit.m</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/updateCanceledByCustom" title="updateCanceledByCustom"></a>
+	<h3 class="method-title"><code><a href="#//api/name/updateCanceledByCustom">&ndash;&nbsp;updateCanceledByCustom</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<ul>
+<li>取消升级 (用户取消) **</li>
+</ul>
+
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)updateCanceledByCustom</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<ul>
+<li>取消升级 (用户取消) **</li>
+</ul>
+
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">JSDataProcessingUnit.m</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/subData" title="subData"></a>
+	<h3 class="method-title"><code><a href="#//api/name/subData">&ndash;&nbsp;subData</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<ul>
+<li>截取数据，因为蓝牙传输的数据单次有大小限制 **</li>
+</ul>
+
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSData *)subData</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<ul>
+<li>截取数据，因为蓝牙传输的数据单次有大小限制 **</li>
+</ul>
+
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">JSDataProcessingUnit.m</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/get142ByteFromOTADataConvertTo150ByteSubData" title="get142ByteFromOTADataConvertTo150ByteSubData"></a>
+	<h3 class="method-title"><code><a href="#//api/name/get142ByteFromOTADataConvertTo150ByteSubData">&ndash;&nbsp;get142ByteFromOTADataConvertTo150ByteSubData</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<ul>
+<li>将得到的OTA整包根据偏移量取出一个142字节数据加上Header和CheckSum合成一个150字节长度的数据包 **</li>
+</ul>
+
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSData *)get142ByteFromOTADataConvertTo150ByteSubData</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<ul>
+<li>将得到的OTA整包根据偏移量取出一个142字节数据加上Header和CheckSum合成一个150字节长度的数据包 **</li>
+</ul>
+
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">JSDataProcessingUnit.m</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Extension Methods" name="task_Extension Methods"></a>
+						<h2 class="task-title">Extension Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/needToWriteOTAData" title="needToWriteOTAData"></a>
+	<h3 class="method-title"><code><a href="#//api/name/needToWriteOTAData">&nbsp;&nbsp;needToWriteOTAData</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<ul>
+<li>需要写入的OTA数据文件(用于OTA升级的原始文件) **</li>
+</ul>
+
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSData *needToWriteOTAData</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<ul>
+<li>需要写入的OTA数据文件(用于OTA升级的原始文件) **</li>
+</ul>
+
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">JSDataProcessingUnit.m</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/needToWriteOTATotalDataArray" title="needToWriteOTATotalDataArray"></a>
+	<h3 class="method-title"><code><a href="#//api/name/needToWriteOTATotalDataArray">&nbsp;&nbsp;needToWriteOTATotalDataArray</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<ul>
+<li>(数组容器)将需要写入的OTA数据文件中每次取出142 Byte 组成一个150 Byte的数据 拼接起来 **</li>
+</ul>
+
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSMutableArray&lt;NSData*&gt; *needToWriteOTATotalDataArray</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<ul>
+<li>(数组容器)将需要写入的OTA数据文件中每次取出142 Byte 组成一个150 Byte的数据 拼接起来 **</li>
+</ul>
+
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">JSDataProcessingUnit.m</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/needToWriteOTAPacketIndex" title="needToWriteOTAPacketIndex"></a>
+	<h3 class="method-title"><code><a href="#//api/name/needToWriteOTAPacketIndex">&nbsp;&nbsp;needToWriteOTAPacketIndex</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<ul>
+<li>状态标记: 发送数据时,用于记录 包索引 **</li>
+</ul>
+
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) NSInteger needToWriteOTAPacketIndex</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<ul>
+<li>状态标记: 发送数据时,用于记录 包索引 **</li>
+</ul>
+
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">JSDataProcessingUnit.m</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/otaSubDataSequence" title="otaSubDataSequence"></a>
+	<h3 class="method-title"><code><a href="#//api/name/otaSubDataSequence">&nbsp;&nbsp;otaSubDataSequence</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<ul>
+<li>状态标记: 组包时, 每次截取OTA数据包的SEQ ( 0 ~ 99 ) **</li>
+</ul>
+
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) int otaSubDataSequence</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<ul>
+<li>状态标记: 组包时, 每次截取OTA数据包的SEQ ( 0 ~ 99 ) **</li>
+</ul>
+
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">JSDataProcessingUnit.m</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/currentNeedToSendOTASubDataSequence" title="currentNeedToSendOTASubDataSequence"></a>
+	<h3 class="method-title"><code><a href="#//api/name/currentNeedToSendOTASubDataSequence">&nbsp;&nbsp;currentNeedToSendOTASubDataSequence</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<ul>
+<li>状态标记: 发送数据时, 记录这个数据包中的SEQ **</li>
+</ul>
+
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) int currentNeedToSendOTASubDataSequence</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<ul>
+<li>状态标记: 发送数据时, 记录这个数据包中的SEQ **</li>
+</ul>
+
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">JSDataProcessingUnit.m</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/needToWriteOTATotalDataLength" title="needToWriteOTATotalDataLength"></a>
+	<h3 class="method-title"><code><a href="#//api/name/needToWriteOTATotalDataLength">&nbsp;&nbsp;needToWriteOTATotalDataLength</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<ul>
+<li>状态标记: 记录本次转换后的OTA数据总大小 (文件发送完保留80%状态, 虚拟增加5%大小) **</li>
+</ul>
+
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) NSInteger needToWriteOTATotalDataLength</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<ul>
+<li>状态标记: 记录本次转换后的OTA数据总大小 (文件发送完保留80%状态, 虚拟增加5%大小) **</li>
+</ul>
+
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">JSDataProcessingUnit.m</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/otaTotalDataLength" title="otaTotalDataLength"></a>
+	<h3 class="method-title"><code><a href="#//api/name/otaTotalDataLength">&nbsp;&nbsp;otaTotalDataLength</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<ul>
+<li>状态标记: 记录本次OTA升级文件的总大小  **</li>
+</ul>
+
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) long long otaTotalDataLength</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<ul>
+<li>状态标记: 记录本次OTA升级文件的总大小  **</li>
+</ul>
+
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">JSDataProcessingUnit.m</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/otaDataOffset" title="otaDataOffset"></a>
+	<h3 class="method-title"><code><a href="#//api/name/otaDataOffset">&nbsp;&nbsp;otaDataOffset</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<ul>
+<li>状态标记: 单独用于记录OTA升级文件偏移量 (重新组包的时候使用,记录偏移量) **</li>
+</ul>
+
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) NSInteger otaDataOffset</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<ul>
+<li>状态标记: 单独用于记录OTA升级文件偏移量 (重新组包的时候使用,记录偏移量) **</li>
+</ul>
+
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">JSDataProcessingUnit.m</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/ecgConectionHeartBeatData" title="ecgConectionHeartBeatData"></a>
+	<h3 class="method-title"><code><a href="#//api/name/ecgConectionHeartBeatData">&nbsp;&nbsp;ecgConectionHeartBeatData</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<ul>
+<li>蓝牙通信连接有效性指令 // 每次指令相同, 对指令进行缓存, 避免每次生成造成性能上的损耗**</li>
+</ul>
+
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSData *ecgConectionHeartBeatData</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<ul>
+<li>蓝牙通信连接有效性指令 // 每次指令相同, 对指令进行缓存, 避免每次生成造成性能上的损耗**</li>
+</ul>
+
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">JSDataProcessingUnit.m</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2018 Auko. All rights reserved. Updated: 2018-07-13</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

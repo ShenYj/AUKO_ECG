@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>JSGTMBase64 Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">docTarget </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">Auko</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+
+	
+	<optgroup label="Class Methods">
+		
+		<option value="//api/name/decodeBytes:length:">+ decodeBytes:length:</option>
+		
+		<option value="//api/name/decodeData:">+ decodeData:</option>
+		
+		<option value="//api/name/decodeString:">+ decodeString:</option>
+		
+		<option value="//api/name/encodeBytes:length:">+ encodeBytes:length:</option>
+		
+		<option value="//api/name/encodeData:">+ encodeData:</option>
+		
+		<option value="//api/name/stringByEncodingBytes:length:">+ stringByEncodingBytes:length:</option>
+		
+		<option value="//api/name/stringByEncodingData:">+ stringByEncodingData:</option>
+		
+		<option value="//api/name/stringByWebSafeEncodingBytes:length:padded:">+ stringByWebSafeEncodingBytes:length:padded:</option>
+		
+		<option value="//api/name/stringByWebSafeEncodingData:padded:">+ stringByWebSafeEncodingData:padded:</option>
+		
+		<option value="//api/name/webSafeDecodeBytes:length:">+ webSafeDecodeBytes:length:</option>
+		
+		<option value="//api/name/webSafeDecodeData:">+ webSafeDecodeData:</option>
+		
+		<option value="//api/name/webSafeDecodeString:">+ webSafeDecodeString:</option>
+		
+		<option value="//api/name/webSafeEncodeBytes:length:padded:">+ webSafeEncodeBytes:length:padded:</option>
+		
+		<option value="//api/name/webSafeEncodeData:padded:">+ webSafeEncodeData:padded:</option>
+		
+	</optgroup>
+	
+
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">JSGTMBase64 Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>JSGTMBase64.h<br />JSGTMBase64.m</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>The webSafe methods use different character set and also the results aren&rsquo;t
+always padded to a multiple of 4 characters.  This is done so the resulting
+data can be used in urls and url query arguments without needing any
+encoding.  You must use the webSafe* methods together, the data does not
+interop with the RFC methods.</p>
+					</div>
+					
+					
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/encodeData:" title="encodeData:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/encodeData:">+&nbsp;encodeData:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Returns:
+   A new autoreleased NSData with the encoded payload.  nil for any error.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (NSData *)encodeData:(NSData *)<em>data</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Returns:
+   A new autoreleased NSData with the encoded payload.  nil for any error.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">JSGTMBase64.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/decodeData:" title="decodeData:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/decodeData:">+&nbsp;decodeData:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Returns:
+   A new autoreleased NSData with the decoded payload.  nil for any error.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (NSData *)decodeData:(NSData *)<em>data</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Returns:
+   A new autoreleased NSData with the decoded payload.  nil for any error.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">JSGTMBase64.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/encodeBytes:length:" title="encodeBytes:length:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/encodeBytes:length:">+&nbsp;encodeBytes:length:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Returns:
+   A new autoreleased NSData with the encoded payload.  nil for any error.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (NSData *)encodeBytes:(const void *)<em>bytes</em> length:(NSUInteger)<em>length</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Returns:
+   A new autoreleased NSData with the encoded payload.  nil for any error.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">JSGTMBase64.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/decodeBytes:length:" title="decodeBytes:length:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/decodeBytes:length:">+&nbsp;decodeBytes:length:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Returns:
+   A new autoreleased NSData with the encoded payload.  nil for any error.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (NSData *)decodeBytes:(const void *)<em>bytes</em> length:(NSUInteger)<em>length</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Returns:
+   A new autoreleased NSData with the encoded payload.  nil for any error.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">JSGTMBase64.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/stringByEncodingData:" title="stringByEncodingData:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/stringByEncodingData:">+&nbsp;stringByEncodingData:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Returns:
+   A new autoreleased NSString with the encoded payload.  nil for any error.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (NSString *)stringByEncodingData:(NSData *)<em>data</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Returns:
+   A new autoreleased NSString with the encoded payload.  nil for any error.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">JSGTMBase64.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/stringByEncodingBytes:length:" title="stringByEncodingBytes:length:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/stringByEncodingBytes:length:">+&nbsp;stringByEncodingBytes:length:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Returns:
+   A new autoreleased NSString with the encoded payload.  nil for any error.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (NSString *)stringByEncodingBytes:(const void *)<em>bytes</em> length:(NSUInteger)<em>length</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Returns:
+   A new autoreleased NSString with the encoded payload.  nil for any error.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">JSGTMBase64.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/decodeString:" title="decodeString:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/decodeString:">+&nbsp;decodeString:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Returns:
+   A new autoreleased NSData with the decoded payload.  nil for any error.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (NSData *)decodeString:(NSString *)<em>string</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Returns:
+   A new autoreleased NSData with the decoded payload.  nil for any error.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">JSGTMBase64.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/webSafeEncodeData:padded:" title="webSafeEncodeData:padded:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/webSafeEncodeData:padded:">+&nbsp;webSafeEncodeData:padded:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Returns:
+   A new autoreleased NSData with the encoded payload.  nil for any error.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (NSData *)webSafeEncodeData:(NSData *)<em>data</em> padded:(BOOL)<em>padded</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Returns:
+   A new autoreleased NSData with the encoded payload.  nil for any error.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">JSGTMBase64.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/webSafeDecodeData:" title="webSafeDecodeData:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/webSafeDecodeData:">+&nbsp;webSafeDecodeData:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Returns:
+   A new autoreleased NSData with the decoded payload.  nil for any error.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (NSData *)webSafeDecodeData:(NSData *)<em>data</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Returns:
+   A new autoreleased NSData with the decoded payload.  nil for any error.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">JSGTMBase64.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/webSafeEncodeBytes:length:padded:" title="webSafeEncodeBytes:length:padded:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/webSafeEncodeBytes:length:padded:">+&nbsp;webSafeEncodeBytes:length:padded:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Returns:
+   A new autoreleased NSData with the encoded payload.  nil for any error.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (NSData *)webSafeEncodeBytes:(const void *)<em>bytes</em> length:(NSUInteger)<em>length</em> padded:(BOOL)<em>padded</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Returns:
+   A new autoreleased NSData with the encoded payload.  nil for any error.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">JSGTMBase64.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/webSafeDecodeBytes:length:" title="webSafeDecodeBytes:length:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/webSafeDecodeBytes:length:">+&nbsp;webSafeDecodeBytes:length:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Returns:
+   A new autoreleased NSData with the encoded payload.  nil for any error.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (NSData *)webSafeDecodeBytes:(const void *)<em>bytes</em> length:(NSUInteger)<em>length</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Returns:
+   A new autoreleased NSData with the encoded payload.  nil for any error.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">JSGTMBase64.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/stringByWebSafeEncodingData:padded:" title="stringByWebSafeEncodingData:padded:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/stringByWebSafeEncodingData:padded:">+&nbsp;stringByWebSafeEncodingData:padded:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Returns:
+   A new autoreleased NSString with the encoded payload.  nil for any error.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (NSString *)stringByWebSafeEncodingData:(NSData *)<em>data</em> padded:(BOOL)<em>padded</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Returns:
+   A new autoreleased NSString with the encoded payload.  nil for any error.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">JSGTMBase64.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/stringByWebSafeEncodingBytes:length:padded:" title="stringByWebSafeEncodingBytes:length:padded:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/stringByWebSafeEncodingBytes:length:padded:">+&nbsp;stringByWebSafeEncodingBytes:length:padded:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Returns:
+   A new autoreleased NSString with the encoded payload.  nil for any error.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (NSString *)stringByWebSafeEncodingBytes:(const void *)<em>bytes</em> length:(NSUInteger)<em>length</em> padded:(BOOL)<em>padded</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Returns:
+   A new autoreleased NSString with the encoded payload.  nil for any error.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">JSGTMBase64.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/webSafeDecodeString:" title="webSafeDecodeString:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/webSafeDecodeString:">+&nbsp;webSafeDecodeString:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Returns:
+   A new autoreleased NSData with the decoded payload.  nil for any error.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (NSData *)webSafeDecodeString:(NSString *)<em>string</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Returns:
+   A new autoreleased NSData with the decoded payload.  nil for any error.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">JSGTMBase64.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2018 Auko. All rights reserved. Updated: 2018-07-13</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

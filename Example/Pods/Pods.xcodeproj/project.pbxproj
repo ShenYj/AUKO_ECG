@@ -53,8 +53,8 @@
 		601F47F373BD5A3EDB1F537C76A35D76 /* AUKO_ECG-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AUKO_ECG-dummy.m"; sourceTree = "<group>"; };
 		64B897BA40B285B17CD2FA7234A39140 /* AUKO_ECG.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = AUKO_ECG.modulemap; sourceTree = "<group>"; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		68B2C15B20D21CB000EC45F6 /* ECG_SDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ECG_SDK.framework; sourceTree = "<group>"; };
 		68C83B6020CFA91300029800 /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
-		68C83B6220CFA91300029800 /* ECG_SDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ECG_SDK.framework; sourceTree = "<group>"; };
 		69D9D5BE6E8641CE722FA490391B5DB2 /* Pods-AUKO_ECG_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AUKO_ECG_Tests-dummy.m"; sourceTree = "<group>"; };
 		76E365D104BB50E76A18D4DB7BDA6260 /* AUKO_ECG.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AUKO_ECG.xcconfig; sourceTree = "<group>"; };
 		82F72C35827C0FD59C371B60322E19DD /* Pods-AUKO_ECG_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-AUKO_ECG_Tests.modulemap"; sourceTree = "<group>"; };
@@ -135,6 +135,15 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		68B2C15A20D21CB000EC45F6 /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				68B2C15B20D21CB000EC45F6 /* ECG_SDK.framework */,
+			);
+			name = Framework;
+			path = AUKO_ECG/Framework;
+			sourceTree = "<group>";
+		};
 		68C83B5F20CFA91300029800 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
@@ -142,15 +151,6 @@
 			);
 			name = Classes;
 			path = AUKO_ECG/Classes;
-			sourceTree = "<group>";
-		};
-		68C83B6120CFA91300029800 /* Framework */ = {
-			isa = PBXGroup;
-			children = (
-				68C83B6220CFA91300029800 /* ECG_SDK.framework */,
-			);
-			name = Framework;
-			path = AUKO_ECG/Framework;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -227,8 +227,8 @@
 		EADD91023A3ED27BDEAC3EF07863AF30 /* AUKO_ECG */ = {
 			isa = PBXGroup;
 			children = (
+				68B2C15A20D21CB000EC45F6 /* Framework */,
 				68C83B5F20CFA91300029800 /* Classes */,
-				68C83B6120CFA91300029800 /* Framework */,
 				EED32A13C30A5812C705D4285A7BDAB3 /* Pod */,
 				0AA63D7967A986BB2FC104F2B12F57D9 /* Support Files */,
 			);
